@@ -1,0 +1,27 @@
+ESTRUCTURA IF
+=============
+{{ if CONDICION }}
+  # PROCESO
+{{ else if CONDICION }}
+  # HACER OTRA COSA
+{{ else }}
+  # OPCIÓN POR DEFECTO
+{{ end }}
+
+
+OPERADORES (Funciones CONTROL FLOW FUNCIONS)
+==========
+eq ne lt gt ge le and or  not
+default empty failed ........
+
+
+
+EJEMPLOS
+========
+{{ if eq .Values.favorite.drink "coffee" }}mug: true{{ end }}
+
+{{ if eq .Values.favorite.drink "coffee" }}
+  mug: true
+  {{ end }}
+
+
